@@ -12,8 +12,8 @@ function getValues() {
     );
     const averageDesiredStar5Count = desiredStar5Counts.reduce((a, b) => a + b, 0) / Number(numSimulations);
     const averageTotalStar5Count = totalStar5Counts.reduce((a, b) => a + b, 0) / Number(numSimulations);
-    const result = `$引き始めが${startPityCounter}連目でガチャを${numPulls}回引いた時，限定星5キャラは平均${averageDesiredStar5Count.toFixed(2)}体出ます．
-                    $引き始めが${startPityCounter}連目でガチャを${numPulls}回引いた時，すり抜け含めて星5キャラは平均${averageTotalStar5Count.toFixed(2)}体出ます．
+    const result = `引き始めが${startPityCounter}連目でガチャを${numPulls}回引いた時，限定星5キャラは平均${averageDesiredStar5Count.toFixed(2)}体出ます．
+                    引き始めが${startPityCounter}連目でガチャを${numPulls}回引いた時，すり抜け含めて星5キャラは平均${averageTotalStar5Count.toFixed(2)}体出ます．
                     `;
     document.getElementById("result").innerText = result;
 }
