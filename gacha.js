@@ -26,7 +26,7 @@ function gachaSimulation(
 ) {
     const results = [];
     let pityCounter = startPityCounter;
-    const softPityStart = 76;
+    const softPityStart = 74;
     const hardPity = 90;
 
     for (let pull = 0; pull < numPulls; pull++) {
